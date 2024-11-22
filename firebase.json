@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"wslc-302-auth","appId":"1:1068600581870:android:fcb1ea05e2e6d7602a1dff","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"wslc-302-auth","configurations":{"android":"1:1068600581870:android:fcb1ea05e2e6d7602a1dff","ios":"1:1068600581870:ios:4a64bb47fbc8c6992a1dff"}}}}}}
