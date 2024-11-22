@@ -24,6 +24,7 @@ class _SignInScreenState extends State<SignInScreen> {
         child: ElevatedButton(
             onPressed: () {
               createuser();
+              // keytool -list -v -keystore "C:\Users\your username\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
             },
             child: Text("Google Sign In")),
       ),
@@ -38,7 +39,9 @@ class _SignInScreenState extends State<SignInScreen> {
       final GoogleSignInAuthentication? googleauth =
           await googleSignInAccount?.authentication;
       final creadential = GoogleAuthProvider.credential(
-          accessToken: googleauth?.accessToken, idToken: googleauth?.idToken,);
+        accessToken: googleauth?.accessToken,
+        idToken: googleauth?.idToken,
+      );
       return FirebaseAuth.instance.signInWithCredential(creadential);
     } catch (ex) {
       log(ex.toString());
